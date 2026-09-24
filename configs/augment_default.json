@@ -1,0 +1,15 @@
+{
+  "augment": {
+    "enabled": true,
+    "seed": 0,
+    "gain_db": [-6.0, 6.0],
+    "gain_p": 0.5,
+    "polarity_p": 0.5,
+    "band_stop_p": 0.3,
+    "band_stop_min": 0.05,
+    "band_stop_max": 0.25,
+    "time_crop_p": 0.3,
+    "time_crop_min_keep": 0.5,
+    "channel_swap_p": 0.5
+  }
+}

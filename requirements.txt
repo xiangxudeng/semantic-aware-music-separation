@@ -1,0 +1,23 @@
+# 第 1 周环境依赖（Windows + CPU 可跑；numpy 必须 <2，否则 librosa/demucs 会崩）
+# 安装：
+#   pip install -r requirements.txt
+# 有 NVIDIA 显卡想用 CUDA 时，先按 PyTorch 官网命令单独装对应 cu 版本的 torch/torchaudio，
+# 再装本文件其余部分（把下面两行注释掉）。
+
+torch==2.2.2
+torchaudio==2.2.2
+
+numpy==1.26.4
+demucs==4.0.1
+librosa==0.10.2.post1
+soundfile==0.12.1
+musdb==0.4.2
+pandas==2.2.2
+matplotlib==3.8.4
+huggingface_hub==0.25.2
+transformers==4.41.2
+pyarrow==25.0.1
+museval==0.4.1
+mir_eval==0.8.2
+
+# ffmpeg 不是 pip 包，需要单独安装并加入 PATH，否则 demucs 和 musdb 读不了 mp4/mp3。

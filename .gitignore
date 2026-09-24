@@ -1,0 +1,9 @@
+data/
+results/
+third_party/
+__pycache__/
+*.pyc
+*.npy
+*.th
+*.pt
+.venv/
