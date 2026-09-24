@@ -1,9 +1,12 @@
-data/
-results/
-third_party/
+# 只忽略仓库根目录下的数据/结果目录。
+# 注意必须加前导斜杠：写成 data/ 会匹配任意层级的 data 目录，
+# 把 src/data/（数据集接口与数据增强模块）也一起忽略掉——这个坑踩过一次。
+/data/
+/results/
+/third_party/
 __pycache__/
 *.pyc
 *.npy
 *.th
 *.pt
-.venv/
+/.venv/
