@@ -1,0 +1,208 @@
+{
+  "lora": {
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "scores_shape": [
+      5329,
+      50
+    ],
+    "finite": true,
+    "metrics_recomputed_match": true,
+    "labels_tags_prevalence_identical": true,
+    "baseline_map": 0.2744341645427571,
+    "rows": [
+      {
+        "seed": 1,
+        "map": 0.30411109052954577,
+        "tail_map": 0.13259280541254775,
+        "tail_recall": 0.21179996471086399,
+        "map_gain": 0.10813859869172737,
+        "tail_recall_gain": 0.5042611130032952
+      },
+      {
+        "seed": 2,
+        "map": 0.29563803386225695,
+        "tail_map": 0.14601321918962998,
+        "tail_recall": 0.22057395752727532,
+        "map_gain": 0.07726395638395922,
+        "tail_recall_gain": 0.5665764028925804
+      },
+      {
+        "seed": 3,
+        "map": 0.3115554748797051,
+        "tail_map": 0.15400656015678502,
+        "tail_recall": 0.18193832519556136,
+        "map_gain": 0.13526490187108053,
+        "tail_recall_gain": 0.2921756050821118
+      }
+    ]
+  },
+  "seed_tests": [
+    {
+      "metric": "map",
+      "baseline": 0.2744341645427571,
+      "unit": "training seed vs fixed baseline",
+      "training_seeds": 3,
+      "mean": 0.3037681997571693,
+      "sample_std": 0.00796425845244369,
+      "relative_gain": 0.10688915231558904,
+      "n_pairs": 3,
+      "delta": 0.029334035214412173,
+      "ci_low": 0.021203869319499857,
+      "ci_high": 0.03712131033694799,
+      "p_value": 0.25,
+      "test": "exact paired sign permutation",
+      "bootstrap_repeats": 10000,
+      "permutation_repeats": 8,
+      "statistics_seed": 20261007,
+      "p_holm": 0.5
+    },
+    {
+      "metric": "tail_recall",
+      "baseline": 0.1408,
+      "unit": "training seed vs fixed baseline",
+      "training_seeds": 3,
+      "mean": 0.20477074914456686,
+      "sample_std": 0.020254269303678928,
+      "relative_gain": 0.4543377069926622,
+      "n_pairs": 3,
+      "delta": 0.06397074914456688,
+      "ci_low": 0.04113832519556135,
+      "ci_high": 0.07977395752727531,
+      "p_value": 0.25,
+      "test": "exact paired sign permutation",
+      "bootstrap_repeats": 10000,
+      "permutation_repeats": 8,
+      "statistics_seed": 20261007,
+      "p_holm": 0.5
+    }
+  ],
+  "conditioned_summary": [
+    {
+      "group": "none",
+      "test_tracks": 50,
+      "four_stem_mean": 7.408541527559606,
+      "vocals_median": 8.472183796229949,
+      "drums_median": 9.491624348659741,
+      "bass_median": 7.665584927680108,
+      "other_median": 5.668545769961362
+    },
+    {
+      "group": "track",
+      "test_tracks": 50,
+      "four_stem_mean": 7.083292057259632,
+      "vocals_median": 8.030888975309713,
+      "drums_median": 9.493673811300578,
+      "bass_median": 8.010238365919879,
+      "other_median": 5.213224574909398
+    },
+    {
+      "group": "zero",
+      "test_tracks": 50,
+      "four_stem_mean": 7.367624548676832,
+      "vocals_median": 8.385348220731728,
+      "drums_median": 9.510094801490265,
+      "bass_median": 7.665897618226651,
+      "other_median": 5.668060706717846
+    },
+    {
+      "group": "text",
+      "test_tracks": 50,
+      "four_stem_mean": 7.174282421416595,
+      "vocals_median": 8.09930039392132,
+      "drums_median": 9.294932702420851,
+      "bass_median": 8.021803911308616,
+      "other_median": 5.260551684262287
+    }
+  ],
+  "conditioned_primary_tests": [
+    {
+      "comparison": "track-none",
+      "metric": "four_stem_mean",
+      "unit": "test track",
+      "training_seed": 0,
+      "training_seeds": 1,
+      "n_pairs": 50,
+      "delta": -0.32524947029997364,
+      "ci_low": -0.44139641880096475,
+      "ci_high": -0.2151482888913615,
+      "p_value": 9.999000099990002e-05,
+      "test": "random paired sign permutation",
+      "bootstrap_repeats": 10000,
+      "permutation_repeats": 10000,
+      "statistics_seed": 20261007,
+      "p_holm": 0.0004999500049995
+    },
+    {
+      "comparison": "zero-none",
+      "metric": "four_stem_mean",
+      "unit": "test track",
+      "training_seed": 0,
+      "training_seeds": 1,
+      "n_pairs": 50,
+      "delta": -0.04091697888277523,
+      "ci_low": -0.07513308158699504,
+      "ci_high": -0.01309519067222685,
+      "p_value": 0.0025997400259974,
+      "test": "random paired sign permutation",
+      "bootstrap_repeats": 10000,
+      "permutation_repeats": 10000,
+      "statistics_seed": 20261007,
+      "p_holm": 0.0051994800519948
+    },
+    {
+      "comparison": "text-none",
+      "metric": "four_stem_mean",
+      "unit": "test track",
+      "training_seed": 0,
+      "training_seeds": 1,
+      "n_pairs": 50,
+      "delta": -0.23425910614301126,
+      "ci_low": -0.35343614149762254,
+      "ci_high": -0.09146635987590683,
+      "p_value": 0.0005999400059994001,
+      "test": "random paired sign permutation",
+      "bootstrap_repeats": 10000,
+      "permutation_repeats": 10000,
+      "statistics_seed": 20261007,
+      "p_holm": 0.0017998200179982003
+    },
+    {
+      "comparison": "text-zero",
+      "metric": "four_stem_mean",
+      "unit": "test track",
+      "training_seed": 0,
+      "training_seeds": 1,
+      "n_pairs": 50,
+      "delta": -0.19334212726023606,
+      "ci_low": -0.32889415755454676,
+      "ci_high": -0.024644637019489015,
+      "p_value": 0.012898710128987101,
+      "test": "random paired sign permutation",
+      "bootstrap_repeats": 10000,
+      "permutation_repeats": 10000,
+      "statistics_seed": 20261007,
+      "p_holm": 0.012898710128987101
+    },
+    {
+      "comparison": "track-zero",
+      "metric": "four_stem_mean",
+      "unit": "test track",
+      "training_seed": 0,
+      "training_seeds": 1,
+      "n_pairs": 50,
+      "delta": -0.2843324914171984,
+      "ci_low": -0.3969832848039902,
+      "ci_high": -0.1778012103686875,
+      "p_value": 9.999000099990002e-05,
+      "test": "random paired sign permutation",
+      "bootstrap_repeats": 10000,
+      "permutation_repeats": 10000,
+      "statistics_seed": 20261007,
+      "p_holm": 0.0004999500049995
+    }
+  ]
+}

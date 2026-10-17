@@ -1,0 +1,12 @@
+{
+  "text": "This is a piece of music",
+  "encoder": "laion_clap.CLAP_Module(enable_fusion=False), model_id=1",
+  "checkpoint": "630k-audioset-best.pt",
+  "checkpoint_sha256": "8053c9775516af2f4902e1e8281e356cc1bf7a85e8b761908170767b77c3f037",
+  "npy_sha256": "bd71eb3c728b65e078ff6e1ba94ee6d809426d5c5cb24d6734193ca63c7a672f",
+  "vector_sha256": "48ece2d49bca370e35fd60a0d6b1f880a21bf3f5e07f22ed52a24b8745fbd40b",
+  "shape": [
+    512
+  ],
+  "normalization": "L2"
+}

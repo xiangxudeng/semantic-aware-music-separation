@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-13",
+  "groups": [
+    "none",
+    "track",
+    "zero",
+    "text"
+  ],
+  "training_seed": 0,
+  "steps": 300,
+  "batch_size": 3,
+  "lr": 0.0001,
+  "segment_seconds": 7.8,
+  "augment": "default",
+  "model": "htdemucs",
+  "injection": "encoder.3 FiLM (gamma+beta)",
+  "test_tracks": 50,
+  "metric": "whole-track SI-SDR, four-stem arithmetic mean per track",
+  "inference_shifts": 1,
+  "inference_seed": "test_track_index",
+  "primary_comparisons": [
+    [
+      "track",
+      "none"
+    ],
+    [
+      "zero",
+      "none"
+    ],
+    [
+      "text",
+      "none"
+    ],
+    [
+      "text",
+      "zero"
+    ],
+    [
+      "track",
+      "zero"
+    ]
+  ],
+  "primary_holm_family_size": 5,
+  "exploratory_stem_holm_family_size": 20,
+  "statistics_seed": 20261007,
+  "bootstrap_repeats": 10000,
+  "permutation_repeats": 10000,
+  "confidence": 0.95,
+  "limits": [
+    "one training seed; track bootstrap does not estimate training variance",
+    "fixed generic text shared by all tracks, not target-instrument text control",
+    "zero and fixed-text compare two trainable constant affine parameterizations, not semantic causality"
+  ],
+  "training_rng_reset_after_model_init": true,
+  "training_precision": "fp32",
+  "precision_update": "FP16 probe interrupted before completion; all four formal groups restart FP32, before any full-test result"
+}

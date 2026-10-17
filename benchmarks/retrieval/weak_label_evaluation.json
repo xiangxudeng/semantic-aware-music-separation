@@ -1,0 +1,68 @@
+{
+  "model": "Official LAION CLAP HTSAT unfused",
+  "gallery_size": 5329,
+  "gallery_split": "MTT test",
+  "raw_chinese": true,
+  "translation_or_query_tuning": false,
+  "query_seed": "none: predefined cases",
+  "statistics_seed": 20261007,
+  "summary": {
+    "en": {
+      "query_count": 12,
+      "precision_at5": 0.2333333333333334,
+      "hit_at5": 0.75,
+      "constraint_coverage": 0.44999999999999996,
+      "cases_without_known_relevant": 2,
+      "evaluable_queries": {
+        "query_count": 10,
+        "precision_at5": 0.28,
+        "hit_at5": 0.9
+      }
+    },
+    "zh": {
+      "query_count": 12,
+      "precision_at5": 0.0,
+      "hit_at5": 0.0,
+      "constraint_coverage": 0.049999999999999996,
+      "cases_without_known_relevant": 2,
+      "evaluable_queries": {
+        "query_count": 10,
+        "precision_at5": 0.0,
+        "hit_at5": 0.0
+      }
+    }
+  },
+  "bilingual_overlap_at5": 0.0,
+  "paired_en_minus_zh_precision": {
+    "n_pairs": 12,
+    "delta": 0.2333333333333334,
+    "ci_low": 0.13333333333333333,
+    "ci_high": 0.35000000000000003,
+    "p_value": 0.00390625,
+    "test": "exact paired sign permutation",
+    "bootstrap_repeats": 10000,
+    "permutation_repeats": 4096,
+    "statistics_seed": 20261007
+  },
+  "evaluable_en_minus_zh_precision": {
+    "n_pairs": 10,
+    "delta": 0.28,
+    "ci_low": 0.18,
+    "ci_high": 0.4,
+    "p_value": 0.00390625,
+    "test": "exact paired sign permutation",
+    "bootstrap_repeats": 10000,
+    "permutation_repeats": 1024,
+    "statistics_seed": 20261007
+  },
+  "evaluable_rule": "known gallery positives > 0, independent of retrieval rank; report all 12 cases and the 10 evaluable cases separately",
+  "elapsed_seconds": 3.976,
+  "relevance": "Every required group must have an explicitly positive MTT label; OR within groups, AND between groups",
+  "limitations": [
+    "不是独立人工试听评测；人工评分列保留空白",
+    "场景适用性、主观情绪和否定语义不能完全由标签确认",
+    "标签缺失会漏计；no vocals使用显式正标注，不从未标注vocal推断无演唱",
+    "12组便利样本不代表所有自由查询；配对区间和p值仅描述这组固定查询",
+    "中英文为同组意图但翻译可能有表达差异；无翻译预处理"
+  ]
+}

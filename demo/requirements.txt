@@ -1,0 +1,19 @@
+# Python 3.10；CUDA版torch按机器配置单独安装；保留numpy<2兼容旧音频工具链。
+torch==2.2.2
+torchaudio==2.2.2
+torchvision==0.17.2
+numpy==1.26.4
+pandas==2.2.2
+demucs==4.0.1
+laion-clap==1.1.7
+librosa==0.10.2.post1
+soundfile==0.12.1
+transformers==4.41.2
+huggingface-hub==0.25.2
+scikit-learn==1.7.2
+gradio==4.44.1
+# Gradio 4旧版schema转换不兼容新的pydantic JSON schema，成组固定。
+pydantic==2.9.2
+fastapi==0.115.0
+starlette==0.38.6
+httpx==0.27.2

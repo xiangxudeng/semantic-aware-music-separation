@@ -1,0 +1,3 @@
+metric,baseline,unit,training_seeds,mean,sample_std,relative_gain,n_pairs,delta,ci_low,ci_high,p_value,test,bootstrap_repeats,permutation_repeats,statistics_seed,p_holm
+map,0.2744341645427571,training seed vs fixed baseline,3,0.3037681997571693,0.00796425845244369,0.10688915231558904,3,0.029334035214412173,0.021203869319499857,0.03712131033694799,0.25,exact paired sign permutation,10000,8,20261007,0.5
+tail_recall,0.1408,training seed vs fixed baseline,3,0.20477074914456686,0.020254269303678928,0.4543377069926622,3,0.06397074914456688,0.04113832519556135,0.07977395752727531,0.25,exact paired sign permutation,10000,8,20261007,0.5

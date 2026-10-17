@@ -1,0 +1,6 @@
+-r requirements.txt
+peft==0.11.1
+accelerate==0.30.1
+bitsandbytes==0.43.1
+pyarrow==25.0.1
+sacrebleu==2.4.2

@@ -1,0 +1,352 @@
+{
+  "score_scale": {
+    "0": "不相关",
+    "1": "部分相关",
+    "2": "大部分相关"
+  },
+  "reviewer_count": 1,
+  "reviewed_candidates": 120,
+  "summary": {
+    "en": {
+      "candidate_count": 60,
+      "query_count": 12,
+      "score_counts": {
+        "2": 59,
+        "1": 1
+      },
+      "mean_score": 1.9833333333333334,
+      "p5_score2": 0.9833333333333334,
+      "hit5_score2": 1.0,
+      "p5_score_atleast1": 1.0,
+      "score2_label_negative": 45
+    },
+    "zh": {
+      "candidate_count": 60,
+      "query_count": 12,
+      "score_counts": {
+        "0": 45,
+        "1": 14,
+        "2": 1
+      },
+      "mean_score": 0.26666666666666666,
+      "p5_score2": 0.016666666666666666,
+      "hit5_score2": 0.08333333333333333,
+      "p5_score_atleast1": 0.25,
+      "score2_label_negative": 1
+    }
+  },
+  "cases": [
+    {
+      "case_id": "slow_piano",
+      "language": "en",
+      "query": "Slow piano music without singing, for a quiet evening",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "slow_piano",
+      "language": "zh",
+      "query": "安静夜晚适合的慢速钢琴音乐，没有演唱",
+      "score_counts": {
+        "0": 2,
+        "1": 3
+      },
+      "mean_score": 0.6,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.6
+    },
+    {
+      "case_id": "female_acoustic",
+      "language": "en",
+      "query": "An acoustic guitar accompanying a female singer",
+      "score_counts": {
+        "2": 4,
+        "1": 1
+      },
+      "mean_score": 1.8,
+      "p5_score2": 0.8,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "female_acoustic",
+      "language": "zh",
+      "query": "木吉他伴奏的女声歌曲",
+      "score_counts": {
+        "0": 3,
+        "1": 2
+      },
+      "mean_score": 0.4,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.4
+    },
+    {
+      "case_id": "male_rock",
+      "language": "en",
+      "query": "A male singer over rock guitar riffs",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "male_rock",
+      "language": "zh",
+      "query": "男声演唱与摇滚吉他相结合的音乐",
+      "score_counts": {
+        "0": 3,
+        "1": 2
+      },
+      "mean_score": 0.4,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.4
+    },
+    {
+      "case_id": "fast_electronic",
+      "language": "en",
+      "query": "Fast electronic dance music driven by drums",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "fast_electronic",
+      "language": "zh",
+      "query": "鼓点推动的快速电子舞曲",
+      "score_counts": {
+        "1": 2,
+        "0": 3
+      },
+      "mean_score": 0.4,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.4
+    },
+    {
+      "case_id": "classical_violin",
+      "language": "en",
+      "query": "Classical strings with a violin melody",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "classical_violin",
+      "language": "zh",
+      "query": "小提琴旋律与古典弦乐相结合的音乐",
+      "score_counts": {
+        "0": 5
+      },
+      "mean_score": 0.0,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.0
+    },
+    {
+      "case_id": "jazz_sax",
+      "language": "en",
+      "query": "A jazz piece with a saxophone melody",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "jazz_sax",
+      "language": "zh",
+      "query": "带萨克斯旋律的爵士乐",
+      "score_counts": {
+        "0": 5
+      },
+      "mean_score": 0.0,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.0
+    },
+    {
+      "case_id": "ambient_synth",
+      "language": "en",
+      "query": "Ambient synthesizer music for a spacious background",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "ambient_synth",
+      "language": "zh",
+      "query": "适合作为空间感背景的氛围合成器音乐",
+      "score_counts": {
+        "1": 4,
+        "2": 1
+      },
+      "mean_score": 1.2,
+      "p5_score2": 0.2,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "soft_flute",
+      "language": "en",
+      "query": "Soft flute music with a calm feeling",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "soft_flute",
+      "language": "zh",
+      "query": "柔和安静的长笛音乐",
+      "score_counts": {
+        "0": 5
+      },
+      "mean_score": 0.0,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.0
+    },
+    {
+      "case_id": "baroque_keys",
+      "language": "en",
+      "query": "A baroque piece played on a harpsichord",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "baroque_keys",
+      "language": "zh",
+      "query": "羽管键琴演奏的巴洛克风格音乐",
+      "score_counts": {
+        "0": 5
+      },
+      "mean_score": 0.0,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.0
+    },
+    {
+      "case_id": "slow_cello",
+      "language": "en",
+      "query": "A slow cello melody for reflective moments",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "slow_cello",
+      "language": "zh",
+      "query": "适合沉思片刻的慢速大提琴旋律",
+      "score_counts": {
+        "0": 5
+      },
+      "mean_score": 0.0,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.0
+    },
+    {
+      "case_id": "heavy_drums",
+      "language": "en",
+      "query": "Heavy metal music with forceful drums",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "heavy_drums",
+      "language": "zh",
+      "query": "带有强劲鼓声的重金属音乐",
+      "score_counts": {
+        "1": 1,
+        "0": 4
+      },
+      "mean_score": 0.2,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.2
+    },
+    {
+      "case_id": "piano_choir",
+      "language": "en",
+      "query": "Piano accompaniment behind a choir",
+      "score_counts": {
+        "2": 5
+      },
+      "mean_score": 2.0,
+      "p5_score2": 1.0,
+      "hit5_score2": 1,
+      "p5_score_atleast1": 1.0
+    },
+    {
+      "case_id": "piano_choir",
+      "language": "zh",
+      "query": "钢琴为合唱伴奏的音乐",
+      "score_counts": {
+        "0": 5
+      },
+      "mean_score": 0.0,
+      "p5_score2": 0.0,
+      "hit5_score2": 0,
+      "p5_score_atleast1": 0.0
+    }
+  ],
+  "paired_en_minus_zh_p5_score2": {
+    "n_pairs": 12,
+    "delta": 0.9666666666666667,
+    "ci_low": 0.9166666666666669,
+    "ci_high": 1.0,
+    "p_value": 0.00048828125,
+    "test": "exact paired sign permutation",
+    "bootstrap_repeats": 10000,
+    "permutation_repeats": 4096,
+    "statistics_seed": 20261007
+  },
+  "limitations": [
+    "单名评审；盲评与评分一致性未验证",
+    "12组固定查询，不代表所有查询",
+    "2分表示大部分相关，不证明全部条件满足",
+    "人工与弱标签判分回答不同问题，分歧不能一概归因于标签漏标"
+  ]
+}

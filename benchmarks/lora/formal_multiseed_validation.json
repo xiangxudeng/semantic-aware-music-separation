@@ -1,0 +1,41 @@
+{
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "scores_shape": [
+    5329,
+    50
+  ],
+  "finite": true,
+  "metrics_recomputed_match": true,
+  "labels_tags_prevalence_identical": true,
+  "baseline_map": 0.2744341645427571,
+  "rows": [
+    {
+      "seed": 1,
+      "map": 0.30411109052954577,
+      "tail_map": 0.13259280541254775,
+      "tail_recall": 0.21179996471086399,
+      "map_gain": 0.10813859869172737,
+      "tail_recall_gain": 0.5042611130032952
+    },
+    {
+      "seed": 2,
+      "map": 0.29563803386225695,
+      "tail_map": 0.14601321918962998,
+      "tail_recall": 0.22057395752727532,
+      "map_gain": 0.07726395638395922,
+      "tail_recall_gain": 0.5665764028925804
+    },
+    {
+      "seed": 3,
+      "map": 0.3115554748797051,
+      "tail_map": 0.15400656015678502,
+      "tail_recall": 0.18193832519556136,
+      "map_gain": 0.13526490187108053,
+      "tail_recall_gain": 0.2921756050821118
+    }
+  ]
+}
